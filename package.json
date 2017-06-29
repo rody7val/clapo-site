@@ -1,0 +1,30 @@
+{
+  "name": "clapo-site",
+  "version": "0.1.0",
+  "description": "Sitio Web Oficial de la Cooperativa Ltda de Agua Potable y Otros Servicios publicos de Chillar, Azul, Buenos Aires",
+  "author": "Rodolfo Valguarnera <rod7val@gmail.com> (https://github.com/rody7val/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rody7val/clapo-site.git"
+  },
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-transition-group": "^15.6.0",
+    "react-dom": "^15.6.1",
+    "react-scrollable-anchor": "^0.4.2",
+    "reactstrap": "^4.8.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
