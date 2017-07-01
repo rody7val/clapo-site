@@ -1,0 +1,107 @@
+.App-main {
+    margin-top: 84px;
+    text-align: center;
+    overflow: hidden;
+}
+section {
+    background-color: #fff;
+    min-height: 200px;
+    position: relative;
+    padding: 5rem 4rem 5rem 4rem;
+    height: auto;
+    z-index: 0;
+}
+#cloacas img {
+    width: 100%;
+    max-width: 150px;
+}
+#cloacas p.lead {
+    color: #959694;
+    font-size: 18px;
+}
+
+@media (max-width: 61.9em){
+    h1 {
+        font-size: 27px!important;
+    }
+    section {
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    p {
+        font-size: 16px!important;
+    }
+}
+
+/* big triangle */
+.first-section{
+    background-color: #FFCC33!important;
+    color: #fff;;
+}
+.gray-section{
+    background-color: #F1F3EE!important;
+    color: #333;
+}
+.white-section{
+    background-color: #fff!important;
+    color: #333;
+}
+.last-section{
+    background-color: #FFCC33!important;
+    color: #fff;
+}
+.big-triangle:before {
+    right: 50%;
+    border-right: 1500px solid transparent;
+    border-left: 1500px solid;
+}
+.big-triangle:after {
+    left: 50%;
+    border-left: 1500px solid transparent;
+    border-right: 1500px solid;
+}
+.big-triangle:after, .big-triangle:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 50%;
+    -moz-transform: rotate(0.000001deg);
+    -webkit-transform: rotate(0.000001deg);
+    -o-transform: rotate(0.000001deg);
+    -ms-transform: rotate(0.000001deg);
+    transform: rotate(0.000001deg);
+}
+.triangle-gray:after, .triangle-gray:before {
+    border-bottom: 160px solid #F1F3EE;
+}
+.triangle-white:after, .triangle-white:before {
+    border-bottom: 160px solid #fff;
+}
+.triangle-last:after, .triangle-last:before {
+    border-bottom: 160px solid #FFCC33;
+}
+
+/* Slider */
+.center {
+    margin: 0 auto;
+}
+.carousel.carousel-slider {
+    margin: 0 auto!important;
+    max-width: 400px
+}
+.carousel p {
+    color: #fff;
+}
+
+/* Contacto */
+.contact {
+    text-shadow: 0.1rem 0.1rem darkolivegreen;
+}
+.contact .form {
+    text-align: left;
+    text-shadow: none;
+}
+.contact label {
+    font-weight: 500;
+    color: initial;
+}

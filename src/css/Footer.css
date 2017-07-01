@@ -1,0 +1,41 @@
+.App-footer {
+	padding: 80px 50px 50px;
+	background-color: #313332;
+	color: #fff;
+	z-index: -1;
+}
+.App-footer dd {
+    margin-left: 40px;
+}
+.App-footer p {
+	font-size: 15px!important;
+	font-weight: 300;
+	padding: 0px;
+	margin: 0px
+}
+.App-footer p small{
+	font-weight: 300;
+}
+.App-footer img {
+	padding-top: .5rem;
+    width: 25px;
+}
+.footer-row-sapace{
+	/*margin-top: .5rem;*/
+}
+.footer-col-sapace{
+	margin-bottom: 1rem;
+}
+
+/* lists */
+.ul-footer{
+	color: #E6B706;
+}
+.link-footer{
+	color: #fff;
+	text-decoration: none;
+}
+.link-footer:hover{
+	text-decoration: none;
+	color: #E6B706;
+}
