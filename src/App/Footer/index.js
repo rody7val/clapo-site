@@ -33,19 +33,7 @@ class Footer extends React.Component {
 							<h5>ENLACES EXTERNOS</h5>
 							<ul className='ul-footer' style={ulStyle}>
 								<li>
-									<a className='link-footer' href='/guardia'>GUARDIA C.L.A.Po</a>
-								</li>
-								<li>
-									<a className='link-footer' href='/reclamos'>RECLAMOS</a>
-								</li>
-								<li>
-									<a className='link-footer' href='/consultas'>CONSULTAS</a>
-								</li>
-								<li>
-									<a className='link-footer' href='/reclamos-canal'>RECLAMOS CANAL</a>
-								</li>
-								<li>
-									<a className='link-footer' href='/internet'>INTERNET</a>
+									<a className='link-footer' target='_blank' href='https://clapo-admin.firebaseapp.com/'>Administración</a>
 								</li>
 							</ul>
 						</Col>

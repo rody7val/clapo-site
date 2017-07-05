@@ -102,7 +102,7 @@
 }
 
 /* Celular */
-@media (max-width: 33.9em) {
+@media (max-width: 48em) {
 	.title {
 		display: none;
 	}

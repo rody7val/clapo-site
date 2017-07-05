@@ -11,7 +11,7 @@ class Internet extends React.Component {
 					<h1>Algunos de nuestros trabajos</h1>
 					<p className='lead'>La Cooperativa ha ralizado emprendimientos tendientes a mejorar la calidad de vida de la población</p>
 					<br />
-					<Carousel showIndicators={false} emulateTouch useKeyboardArrows>
+					<Carousel width='400px' showIndicators={false} emulateTouch useKeyboardArrows>
 						<div>
 							<img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=400%C3%97180&w=318&h=180" alt=''/>
 							<p>Descripción de la imagen. <a href='/h#internet'>Ir al Blog</a></p>

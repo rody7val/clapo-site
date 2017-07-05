@@ -11,11 +11,11 @@ export default class Example extends React.Component {
 		this.state = {
 			collapsed: true,
 			navs: [
-				{	link: '#cloacas',		name: 'CLOACAS' },
-				{	link: '#internet',	name: 'INTERNET' },
-				{	link: '#canal2',		name: 'CANAL2' },
-				{	link: '#agua',			name: 'AGUA' },
-				{	link: '#contacto',	name: 'CONTACTO' }
+				{ link: '#cloacas',	name: 'CLOACAS' },
+				{ link: '#internet', name: 'INTERNET' },
+				{ link: '#canal2', name: 'CANAL2' },
+				{ link: '#agua', name: 'AGUA' },
+				{ link: '#contacto', name: 'CONTACTO' }
 			]
 		};
 
@@ -49,9 +49,6 @@ export default class Example extends React.Component {
 								</NavItem>
 							))
 						}
-						<NavItem className='App-nav-item'>
-							<a href='/admin' className='App-nav-link-button btn btn-sm btn-outline-primary'>Area Clientes</a>
-						</NavItem>
 					</Nav>
 
 					<NavbarToggler className='App-toggle' onClick={this.toggleNavbar} />
@@ -68,9 +65,6 @@ export default class Example extends React.Component {
 									</NavItem>
 								))
 							}
-							<NavItem className='App-nav-item col-6'>
-								<a href='/admin' className='App-nav-link-button btn btn-md btn-outline-primary'>Area Clientes</a>
-							</NavItem>
 						</Nav>
 
 					</Collapse>
