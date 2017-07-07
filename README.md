@@ -1,1 +1,14 @@
-Sitio Web Oficial de la Cooperativa Ltda de Agua Potable y Otros Servicios publicos de Chillar, Azul, Buenos Aires.
+# (clapo-site) Sitio web
+
+Requisitos:
+
+ * [Node.js](https://nodejs.org/es/)
+
+Instalación:
+
+```
+git clone https://github.com/rody7val/clapo-site
+cd clapo-site
+npm install
+npm start
+```
