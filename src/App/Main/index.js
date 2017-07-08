@@ -1,4 +1,5 @@
 import React from 'react';
+import top from '../../img/top.png';
 // estilos
 import 'bootstrap/dist/css/bootstrap.css';
 import 'react-responsive-carousel/lib/styles/carousel.css'
@@ -6,7 +7,7 @@ import '../../css/Main.css';
 // componentes
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 // custom component
-import Home from './Home';
+import Banner from './Banner';
 import Cloacas from './Cloacas';
 import Internet from './Internet';
 import Canal2 from './Canal2';
@@ -24,8 +25,8 @@ class Main extends React.Component {
 		
 		return (
 			<div className='App-main'>
-				<ScrollableAnchor id={'home'}>
-					<Home />
+				<ScrollableAnchor id={'banner'}>
+					<Banner />
 				</ScrollableAnchor>
 
 				<ScrollableAnchor id={'cloacas'}>
@@ -47,6 +48,9 @@ class Main extends React.Component {
 				<ScrollableAnchor id={'contacto'}>
 					<Contacto />
 				</ScrollableAnchor>
+
+				<span id='top'><a href='#banner' title='Volver arriba.'><img className='img-fluid' src={top}/></a></span>
+
 
 			</div>
 		);
