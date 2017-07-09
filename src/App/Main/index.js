@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'react-responsive-carousel/lib/styles/carousel.css'
 import '../../css/Main.css';
 // componentes
+import { Route } from 'react-router-dom';
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor';
 // custom component
 import Banner from './Banner';
@@ -49,8 +50,13 @@ class Main extends React.Component {
 					<Contacto />
 				</ScrollableAnchor>
 
-				<span id='top'><a href='#banner' title='Volver arriba.'><img className='img-fluid' src={top}/></a></span>
-
+				<Route path='/' render={() => (
+					<span id='top'>
+						<a href='#banner' title='Volver arriba.'>
+							<img className='img-fluid' src={top} alt='back-to-top'/>
+						</a>
+					</span>
+				)}/>
 
 			</div>
 		);

@@ -15,7 +15,7 @@ class Footer extends React.Component {
 	render() {
 
 		let ulStyle = {
-			"list-style-image": "url(" + link + ")"
+			listStyleImage: "url(" + link + ")"
 		};
 
 		return (
@@ -33,7 +33,7 @@ class Footer extends React.Component {
 							<h5>ENLACES EXTERNOS</h5>
 							<ul className='ul-footer' style={ulStyle}>
 								<li>
-									<a className='link-footer' target='_blank' href='https://clapo-admin.firebaseapp.com/'>Administración</a>
+									<a className='link-footer' target='_blank' href='https://clapo-admin.firebaseapp.com/' rel="noopener noreferrer">Administración</a>
 								</li>
 							</ul>
 						</Col>

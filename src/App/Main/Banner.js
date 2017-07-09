@@ -2,44 +2,39 @@ import React from 'react';
 import firebase from 'firebase';
 import { Container } from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
+import '../../css/Banner.css'
 
 class Banner extends React.Component {
   constructor () {
     super();
     this.state = {
-      banners: [],
-      first: 0
+      banners: []
     };
-    this.refresh = this.refresh.bind(this);
   }
 
-  refresh () {
-		if (this.state.first===0) {
-			firebase.database().ref('banners').on('child_added', (snapshot) => {
-				const banner = snapshot.val();
-				banner.key = snapshot.getKey();
-				this.setState({
-					banners: this.state.banners.concat(banner)
-				});
+  componentDidMount() {
+		firebase.database().ref('banners').on('child_added', (snapshot) => {
+			const banner = snapshot.val();
+			banner.key = snapshot.getKey();
+
+			this.setState({
+				banners: this.state.banners.concat(banner)
 			});
-		}
-		this.setState({first: this.state.first++});
+		});
   }
-
-	componentWillMount () {
-		this.refresh();
-	}
 
 	render() {	
 		return (
 			<div>
-				<Carousel width='100%' showThumbs={false} emulateTouch useKeyboardArrows>
-					{ this.state.banners.map((banner, index) => (
-						<div key={index}>
+				<Carousel showThumbs={false} emulateTouch useKeyboardArrows>
+					{ this.state.banners.length ? this.state.banners.map( (banner, index) => (
+						<div >
 							<img src={banner.image} alt={banner.name}/>
 							<p>Descripción de la imagen. <a href='/h#internet'>Ir al Blog</a></p>
 						</div>
-					))}
+					) ) : (
+						<p>Cargando ....</p>
+					)}
 				</Carousel>
 
 				<section className='big-triangle triangle-white first-section'>

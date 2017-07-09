@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../../css/Header.css';
 import { Container, Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
 
-export default class Example extends React.Component {
+class Header extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -44,7 +44,7 @@ export default class Example extends React.Component {
 					<Nav navbar className='App-nav'>
 						{
 							this.state.navs.map( (nav, index) => (
-								<NavItem className='App-nav-item'>
+								<NavItem key={index} className='App-nav-item'>
 									<NavLink className='App-nav-link' key={index} href={nav.link}>{nav.name}</NavLink>
 								</NavItem>
 							))
@@ -60,7 +60,7 @@ export default class Example extends React.Component {
 						<Nav navbar className='App-nav-toggle'>
 							{
 								this.state.navs.map( (nav, index) => (
-									<NavItem className='App-nav-item col-6'>
+									<NavItem key={index} className='App-nav-item col-6'>
 										<NavLink className='App-nav-link' onClick={this.toggleNavbar} key={index} href={nav.link}>{nav.name}</NavLink>
 									</NavItem>
 								))
@@ -73,3 +73,5 @@ export default class Example extends React.Component {
 		);
 	}
 }
+
+export default Header;
