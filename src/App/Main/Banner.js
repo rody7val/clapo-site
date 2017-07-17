@@ -30,7 +30,7 @@ class Banner extends React.Component {
 					{ this.state.banners.length ? this.state.banners.map( (banner, index) => (
 						<div >
 							<img src={banner.image} alt={banner.name}/>
-							<p>Descripción de la imagen. <a href='/h#internet'>Ir al Blog</a></p>
+							<p>{banner.desc}{' '}<a href={banner.link} target='_blank' rel='noopener noreferrer'>{banner.linkName}</a></p>
 						</div>
 					) ) : (
 						<p>Cargando ....</p>
